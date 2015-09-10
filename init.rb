@@ -14,7 +14,8 @@ unless Redmine::Plugin.registered_plugins.keys.include?(XLSE_AssetHelpers::PLUGI
     author_url 'mailto:vitaly.klimov@snowbirdgames.com'
     description 'Export issues to XLS files including journals, descriptions, etc. This plugin requires spreadsheet gem.'
     version '0.2.1.t8'
-
+	url 'https://github.com/two-pack/redmine_xls_export'
+	
     settings(:partial => 'settings/xls_export_settings',
              :default => {
                'relations' => '1',
